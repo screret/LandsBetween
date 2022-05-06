@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "landsbetween:block/stripped_erdtree_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "landsbetween:block/stripped_erdtree_wood"
+    },
+    "axis=z": {
+      "model": "landsbetween:block/stripped_erdtree_wood",
+      "x": 90
+    }
+  }
+}

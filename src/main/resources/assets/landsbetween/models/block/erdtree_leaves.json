@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "landsbetween:block/erdtree_leaves"
+  }
+}

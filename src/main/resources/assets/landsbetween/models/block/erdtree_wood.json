@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "landsbetween:block/erdtree_log",
+    "side": "landsbetween:block/erdtree_log"
+  }
+}

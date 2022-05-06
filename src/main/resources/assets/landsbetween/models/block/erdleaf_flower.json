@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "landsbetween:block/erdleaf_flower"
+  }
+}

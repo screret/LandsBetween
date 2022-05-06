@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "landsbetween:erdtree_log",
+    "landsbetween:erdtree_wood",
+    "landsbetween:stripped_erdtree_log",
+    "landsbetween:stripped_erdtree_wood"
+  ]
+}
