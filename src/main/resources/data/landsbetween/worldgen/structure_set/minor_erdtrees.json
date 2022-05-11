@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "landsbetween:minor_erdtree",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 121541467,
+    "spacing": 32,
+    "separation": 24,
+    "type": "minecraft:random_spread"
+  }
+}

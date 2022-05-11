@@ -3,6 +3,7 @@ package io.github.screret.landsbetween;
 import io.github.screret.landsbetween.client.ClientModBus;
 import io.github.screret.landsbetween.registry.ModItems;
 import io.github.screret.landsbetween.registry.ModRegistry;
+import io.github.screret.landsbetween.world.feature.tree.ThickGiantTrunkPlacer;
 import io.github.screret.landsbetween.world.structure.ModStructures;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.color.block.BlockColor;
@@ -19,6 +20,7 @@ import net.minecraft.world.level.FoliageColor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacerType;
 import net.minecraftforge.client.ForgeRenderTypes;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.common.MinecraftForge;
@@ -69,6 +71,8 @@ public class LandsBetween {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModStructures.DEFERRED_REGISTRY_STRUCTURE.register(eventBus);
+        ModRegistry.TRUNK_PLACERS.register(eventBus);
+        ModRegistry.FOLIAGE_PLACERS.register(eventBus);
         ModRegistry.BLOCKS.register(eventBus);
         ModRegistry.ENTITIES.register(eventBus);
         ModRegistry.TILES.register(eventBus);

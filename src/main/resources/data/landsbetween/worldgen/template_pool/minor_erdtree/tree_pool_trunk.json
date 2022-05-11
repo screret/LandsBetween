@@ -1,0 +1,24 @@
+{
+  "name": "landsbetween:minor_erdtree/tree_pool_trunk",
+  "fallback": "minecraft:empty",
+  "elements": [
+	{	
+      "weight": 1,
+      "element": {
+        "location": "landsbetween:minor_erdtree/leaves_1/corner_1",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{	
+      "weight": 1,
+      "element": {
+        "location": "landsbetween:minor_erdtree/leaves_2/corner_1",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

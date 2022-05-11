@@ -1,0 +1,10 @@
+{
+  "config": {
+    "start_pool": "landsbetween:minor_erdtree/minor_erdtree_pool",
+    "size": 7
+  },
+  "biomes": "minecraft:plains",
+  "adapt_noise": false,
+  "spawn_overrides": {},
+  "type": "minecraft:village"
+}

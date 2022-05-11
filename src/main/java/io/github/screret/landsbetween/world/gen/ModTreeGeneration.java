@@ -23,7 +23,7 @@ public class ModTreeGeneration {
             List<Holder<PlacedFeature>> base =
                     event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
 
-            base.add(ModPlacedFeatures.ERDTREE_PLACED);
+            //base.add(ModPlacedFeatures.ERDTREE_PLACED);
         }
     }
 }

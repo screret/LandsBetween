@@ -1,0 +1,15 @@
+{
+  "name": "landsbetween:minor_erdtree/leaves_1/pool_1",
+  "fallback": "landsbetween:minor_erdtree/backup",
+  "elements": [
+	{	
+      "weight": 1,
+      "element": {
+        "location": "landsbetween:minor_erdtree/leaves_1/corner_2",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

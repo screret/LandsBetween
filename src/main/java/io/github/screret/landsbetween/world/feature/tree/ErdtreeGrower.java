@@ -12,6 +12,6 @@ public class ErdtreeGrower extends AbstractTreeGrower {
     @org.jetbrains.annotations.Nullable
     @Override
     protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(Random pRandom, boolean pLargeHive) {
-        return ModConfiguredFeatures.ERDTREE;
+        return ModConfiguredFeatures.MINOR_ERDTREE;
     }
 }

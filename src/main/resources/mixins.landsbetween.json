@@ -1,0 +1,13 @@
+{
+  "package": "io.github.screret.landsbetween.mixin",
+  "refmap": "mixins.landsbetween.refmap.json",
+  "target": "@env(DEFAULT)",
+  "minVersion": "0.6",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinTrunkPlacer",
+    "MixinJigsawPlacement",
+    "MixinFoliagePlacer"
+  ],
+  "required": true
+}
