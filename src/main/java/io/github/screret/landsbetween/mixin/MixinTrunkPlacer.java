@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(targets = "net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer")
 public class MixinTrunkPlacer {
 
-    @Inject(at = @At("HEAD"), method = "Lnet/minecraft/world/level/levelgen/feature/trunkplacers/TrunkPlacer;trunkPlacerParts(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/Products$P3;", cancellable = true)
+    @Inject(at = @At("HEAD"), method = "trunkPlacerParts(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/Products$P3;", cancellable = true)
     private static <P extends TrunkPlacer> void trunkPlacerParts(RecordCodecBuilder.Instance<P> pInstance, CallbackInfoReturnable<Products.P3<RecordCodecBuilder.Mu<P>, Integer, Integer, Integer>> cir) {
         cir.setReturnValue(pInstance.group(Codec.intRange(0, 128).fieldOf("base_height").forGetter((placer) -> {
             return placer.baseHeight;
