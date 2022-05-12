@@ -76,7 +76,7 @@ public class MixinJigsawPlacement {
                     List<PoolElementStructurePiece> list = Lists.newArrayList();
                     list.add(poolelementstructurepiece);
                     if (jigsawconfiguration.maxDepth() > 0) {
-                        AABB safeBounds = new AABB(centerX - ModRegistry.MAX_JIGSAW_SIZE_ONEDIR, level.getMinBuildHeight(), centerZ - ModRegistry.MAX_JIGSAW_SIZE_ONEDIR, centerX + ModRegistry.MAX_JIGSAW_SIZE_ONEDIR + 1, level.getMaxBuildHeight(), centerZ + ModRegistry.MAX_JIGSAW_SIZE_ONEDIR + 1);
+                        AABB safeBounds = new AABB(centerX - ModRegistry.MAX_JIGSAW_SIZE_ONEDIR, centerY - ModRegistry.MAX_JIGSAW_SIZE_ONEDIR * 4, centerZ - ModRegistry.MAX_JIGSAW_SIZE_ONEDIR, centerX + ModRegistry.MAX_JIGSAW_SIZE_ONEDIR + 1, centerY + ModRegistry.MAX_JIGSAW_SIZE_ONEDIR * 4 + 1, centerZ + ModRegistry.MAX_JIGSAW_SIZE_ONEDIR + 1);
                         LandsBetween.LOGGER.error(safeBounds.toString());
                         JigsawPlacement.Placer jigsawPlacer = new JigsawPlacement.Placer(registry, jigsawconfiguration.maxDepth(), factory, chunkgenerator, structuremanager, list, worldgenrandom);
                         jigsawPlacer.placing.addLast(new JigsawPlacement.PieceState(poolelementstructurepiece, new MutableObject<>(Shapes.join(Shapes.create(safeBounds), Shapes.create(AABB.of(boundingbox)), BooleanOp.ONLY_FIRST)), 0));
