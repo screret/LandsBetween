@@ -147,8 +147,8 @@ dependencies {
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
     // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}") // Adds the full JEI mod as a runtime dependency
-    runtimeOnly 'com.sk89q.worldedit:worldedit-core:7.2.9' // Adds Worldedit-core as a runtime dependency
-    runtimeOnly 'com.sk89q.worldedit:worldedit-forge-mc1.18.2:7.2.10' // Adds the Worldedit's Forge-specific part as a runtime dependency
+    runtimeOnly "com.sk89q.worldedit:worldedit-core:7.3.0-SNAPSHOT" // Adds the Worldedit's Forge-specific part as a runtime dependency
+    runtimeOnly fg.deobf("com.sk89q.worldedit:worldedit-forge-mc1.18.2:7.2.11-SNAPSHOT") // Adds the Worldedit's Forge-specific part as a runtime dependency
     // implementation fg.deobf("com.tterrag.registrate:Registrate:MC${mc_version}-${registrate_version}") // Adds registrate as a dependency
     implementation fg.deobf("curse.maven:magistuarmory-509041:3776653") // Adds epic knights as a dependency
     implementation fg.deobf("curse.maven:epicfight-405076:3783205") // Adds epic fight as a dependency
