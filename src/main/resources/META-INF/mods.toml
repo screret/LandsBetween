@@ -34,7 +34,7 @@ displayName = "LandsBetween" #mandatory
 authors = "Screret" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description = '''
-This mod adds multiple elements for medieval-style rpg gameplay.
+This mod adds multiple elements for medieval-style rpg gameplay. Inspiration taken from Elden Ring.
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.landsbetween]] #optional
@@ -54,5 +54,26 @@ modId = "minecraft"
 mandatory = true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
 versionRange = "[1.18.2,1.19)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.landsbetween]]
+modId = "magistuarmory"
+mandatory = true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+versionRange = "[1.0,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.landsbetween]]
+modId = "epicfight"
+mandatory = true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+versionRange = "[18.1.13,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.landsbetween]]
+modId = "betterthirdperson"
+mandatory = true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+versionRange = "[1.7.3,)"
 ordering = "NONE"
 side = "BOTH"

@@ -3,14 +3,12 @@ buildscript {
         // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
         maven { url = 'https://maven.minecraftforge.net' }
         maven { url = 'https://maven.parchmentmc.org' }
-        maven { url = 'https://maven.enginehub.org/repo/' }
         mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
         classpath 'org.parchmentmc:librarian:1.+'
         classpath 'org.spongepowered:mixingradle:0.7.+'
-        classpath 'com.sk89q.worldedit:worldedit-forge-mc1.18.2:7.2.+'
     }
 }
 
@@ -20,7 +18,7 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'org.spongepowered.mixin'
 
 group = 'io.github.screret'
-version = '1.0-SNAPSHOT'
+version = '1.0'
 
 java {
     archivesBaseName = 'LandsBetween'
@@ -128,6 +126,13 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
+    maven { url = 'https://maven.enginehub.org/repo' }
+    maven {
+        url = 'https://www.cursemaven.com'
+        content {
+            includeGroup "curse.maven"
+        }
+    }
 }
 
 dependencies {
@@ -142,7 +147,12 @@ dependencies {
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
     // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}") // Adds the full JEI mod as a runtime dependency
+    runtimeOnly 'com.sk89q.worldedit:worldedit-core:7.2.9' // Adds Worldedit-core as a runtime dependency
+    runtimeOnly 'com.sk89q.worldedit:worldedit-forge-mc1.18.2:7.2.10' // Adds the Worldedit's Forge-specific part as a runtime dependency
     // implementation fg.deobf("com.tterrag.registrate:Registrate:MC${mc_version}-${registrate_version}") // Adds registrate as a dependency
+    implementation fg.deobf("curse.maven:magistuarmory-509041:3776653") // Adds epic knights as a dependency
+    implementation fg.deobf("curse.maven:epicfight-405076:3783205") // Adds epic fight as a dependency
+    implementation fg.deobf("curse.maven:betterthirdperson-435044:3738180") // Adds betterthirdperson as a dependency
 
     // Examples using mod jars from ./libs
     // implementation fg.deobf("blank:coolmod-${mc_version}:${coolmod_version}")
